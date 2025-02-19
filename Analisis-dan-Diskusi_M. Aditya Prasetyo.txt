@@ -1,0 +1,23 @@
+Analisis:
+a.	Apa yang terjadi saat objek berwarna merah muncul di kamera?
+Pada percobaan kali ini, Ketika program telah di run maka akan menampilkan 3 lapisan yang meliputi lapisan utama, lapisan mask, dan lapisan result. Fungsi pada lapisan result adalah Ketika kamera menangkap warna merah maka akan menampilkannya, selain warna merah maka  yang akan menampilkan warna hitam. Selanjutnya, fungsi pada lapisan mask adalah Ketika mendeteksi warna merah lapisan tersebut akan menampilkannya, sedangkan warna selain merah maka akan menampilkan warna hitam.
+b.	Bagaimana sistem mendeteksi dan memfilter warna merah?
+Untuk mendeteksi dan memfilter warna merah dalam sistem HSV, pertama-tama gambar atau video yang diambil oleh kamera harus dikonversi dari format RGB ke HSV. Ini penting karena dalam format HSV, warna lebih mudah dikenali tanpa terlalu terpengaruh oleh pencahayaan. Setelah gambar dalam format HSV, sistem akan menentukan rentang warna merah berdasarkan nilai Hue (H), Saturation (S), dan Value (V). Setelah rentang warna merah ditetapkan, sistem akan membuat masking, yaitu sebuah filter yang hanya membiarkan piksel dengan warna dalam rentang merah tetap terlihat, sementara warna lainnya akan diabaikan atau diubah menjadi hitam. Dengan bantuan pustaka OpenCV di Python. Hasil akhirnya adalah gambar atau video yang hanya menampilkan area berwarna merah, sehingga bisa digunakan untuk berbagai keperluan, seperti pelacakan objek, pengenalan warna pada robot, atau aplikasi lain dalam bidang komputer vision.
+c.	Bagaimana AI dapat meningkatkan sistem control berbasis Computer System?
+Pada metode HSV Color Filtering yang mendeteksi warna merah dapat diterapkan dalam Intelligent Control Systems dalam berbagai hal, salah satunya adalah mengidentifikasi produk atau komponen berdasarkan warna yang telah ditentukan pada saat dimasukkan ke dalam rak.
+Diskusi:
+a.	Bagaimana AI dapat meningkatkan sistem control berbasis Computer Vision?
+	AI dapat meningkatkan sistem kontrol berbasis Computer Vision dengan membuatnya lebih cerdas, cepat, dan akurat dalam mengenali serta merespons lingkungan sekitarnya. Dengan bantuan machine learning dan deep learning, AI dapat belajar dari data visual yang besar sehingga mampu mengenali pola, objek, atau bahkan peristiwa secara otomatis tanpa harus diprogram secara eksplisit. Misalnya, dalam sistem lalu lintas pintar, AI bisa menganalisis rekaman video secara real-time untuk mendeteksi kendaraan, pejalan kaki, dan rambu lalu lintas, lalu mengatur sinyal lampu atau memberikan peringatan secara otomatis. Selain itu, AI juga bisa meningkatkan presisi dalam quality control di industri manufaktur, di mana kamera berbasis Computer Vision dapat mendeteksi cacat produk dengan lebih cepat dan akurat dibandingkan manusia. Dengan kemampuannya dalam pengolahan citra, AI membuat sistem kontrol menjadi lebih adaptif dan mampu bekerja dalam berbagai kondisi lingkungan tanpa kehilangan performa.
+
+
+
+b.	Apa kelebihan dan kekurangan metode deteksi objek berbasis warna?
+Kelebihan: 
+•	Metode ini sangat efektif dalam mendeteksi objek warna
+•	Mudah digunakan dalam mengimplemntasikan dalam kehidupan sehari-hari.
+•	Memiliki akurasi keberhasilan yang tinggi Ketikan pencahayaan tepat.
+	Kekurangan:
+•	Metode ini sulit membaca ketika kekurangan cahaya.
+•	Metode ini kurang efektif Ketika membaca orang/benda yang sangat berdekatan.
+c.	Bagaimana cara meningkatkan akurasi sistem deteksi objek?
+Dapat memilih model deteksi yang digunakan dengan tepat, kemudian menggunakan dataset yang terpercaya agar hasil akurasi sistemnya dapat akurat.
